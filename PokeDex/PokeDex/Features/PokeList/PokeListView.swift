@@ -10,21 +10,32 @@ import SwiftUI
 struct PokeListView: View {
     
     @StateObject var pokeListViewModel = PokeListViewModel()
+    @State private var searchText = ""
     
     var body: some View {
-        VStack {
-            List(pokeListViewModel.pokemonList, id: \.name) { pokemon in
-                Text(pokemon.name)
+        NavigationStack {
+            VStack {
+                List(searchResults, id: \.name) { pokemon in
+                    Text(pokemon.name)
+                }
+                Button(action: {
+                    pokeListViewModel.viewPokemon()
+                }) {
+                    Text("Whos that POKEMON")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.yellow)
+                        .foregroundColor(.white)
+                }
             }
-            Button(action: {
-                pokeListViewModel.viewPokemon()
-            }) {
-                Text("Whos that POKEMON")
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.yellow)
-                    .foregroundColor(.white)
-            }
+        }.searchable(text: $searchText)
+    }
+    
+    var searchResults: [PokeList] {
+        if searchText.isEmpty {
+            return pokeListViewModel.pokemonList
+        } else {
+            return pokeListViewModel.pokemonList.filter( { $0.name.contains(searchText.lowercased()) } )
         }
     }
 }
