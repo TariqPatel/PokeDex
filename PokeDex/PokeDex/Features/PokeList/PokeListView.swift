@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct PokeListView: View {
+    
+    @StateObject var pokeListViewModel = PokeListViewModel()
+    
     var body: some View {
-        Text("Pokemon!")
+        VStack {
+            List(pokeListViewModel.pokemonList, id: \.name) { pokemon in
+                Text(pokemon.name)
+            }
+            Button(action: {
+                pokeListViewModel.viewPokemon()
+            }) {
+                Text("Whos that POKEMON")
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.yellow)
+                    .foregroundColor(.white)
+            }
+        }
     }
 }
 

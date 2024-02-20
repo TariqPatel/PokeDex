@@ -17,6 +17,8 @@
 		194F4E1C2B8523EF0094C6C1 /* PokeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F4E1B2B8523EF0094C6C1 /* PokeListView.swift */; };
 		194F4E1E2B8524000094C6C1 /* PokeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F4E1D2B8524000094C6C1 /* PokeListViewModel.swift */; };
 		194F4E212B852B720094C6C1 /* PokeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F4E202B852B720094C6C1 /* PokeListModel.swift */; };
+		194F4E242B852C970094C6C1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F4E232B852C970094C6C1 /* NetworkService.swift */; };
+		194F4E272B852CD40094C6C1 /* NetworkErrorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F4E262B852CD40094C6C1 /* NetworkErrorEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		194F4E1B2B8523EF0094C6C1 /* PokeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeListView.swift; sourceTree = "<group>"; };
 		194F4E1D2B8524000094C6C1 /* PokeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeListViewModel.swift; sourceTree = "<group>"; };
 		194F4E202B852B720094C6C1 /* PokeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeListModel.swift; sourceTree = "<group>"; };
+		194F4E232B852C970094C6C1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		194F4E262B852CD40094C6C1 /* NetworkErrorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 		194F4DEE2B85228A0094C6C1 /* PokeDex */ = {
 			isa = PBXGroup;
 			children = (
+				194F4E252B852CBE0094C6C1 /* Enums */,
+				194F4E222B852C870094C6C1 /* Services */,
 				194F4E1F2B852B440094C6C1 /* Models */,
 				194F4E192B8523C70094C6C1 /* Features */,
 				194F4DEF2B85228A0094C6C1 /* PokeDexApp.swift */,
@@ -158,6 +164,22 @@
 				194F4E202B852B720094C6C1 /* PokeListModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		194F4E222B852C870094C6C1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				194F4E232B852C970094C6C1 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		194F4E252B852CBE0094C6C1 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				194F4E262B852CD40094C6C1 /* NetworkErrorEnum.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +316,8 @@
 				194F4E212B852B720094C6C1 /* PokeListModel.swift in Sources */,
 				194F4E1E2B8524000094C6C1 /* PokeListViewModel.swift in Sources */,
 				194F4DF22B85228A0094C6C1 /* ContentView.swift in Sources */,
+				194F4E242B852C970094C6C1 /* NetworkService.swift in Sources */,
+				194F4E272B852CD40094C6C1 /* NetworkErrorEnum.swift in Sources */,
 				194F4DF02B85228A0094C6C1 /* PokeDexApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

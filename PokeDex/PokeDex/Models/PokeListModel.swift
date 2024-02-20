@@ -8,10 +8,10 @@
 import Foundation
 
 struct PokeListResponse: Codable {
-    var count: Int
-    var next: String
-    var previous: String
-    var results: PokeList
+    var count: Int?
+    var next: String?
+    var previous: String?
+    var results: [PokeList]
 }
 
 struct PokeList: Codable {
