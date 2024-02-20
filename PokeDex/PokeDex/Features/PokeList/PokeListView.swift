@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  PokeListView.swift
 //  PokeDex
 //
 //  Created by Tasneem Patel on 2024/02/20.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PokeListView: View {
     var body: some View {
-        PokeListView()
+        Text("Pokemon!")
     }
 }
 
 #Preview {
-    ContentView()
+    PokeListView()
 }
