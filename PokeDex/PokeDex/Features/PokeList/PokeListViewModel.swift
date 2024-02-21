@@ -11,8 +11,7 @@ final class PokeListViewModel: ObservableObject {
     @Published var pokemonList: [PokeList] = [PokeList]()
     
     func viewPokemon() {
-        let urlString = "https://pokeapi.co/api/v2/pokemon?limit=100"
-        guard let url = URL(string: urlString) else {return}
+        guard let url = URL(string: Constants.Strings.pokemonListUrl) else {return}
         NetworkService<PokeListResponse>.fetchData(for: url) { (result) in
             switch result {
                 case .success(let response):

@@ -24,6 +24,7 @@
 		198A99BA2B85E94600630A2B /* PokeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A99B92B85E94600630A2B /* PokeDetailView.swift */; };
 		198A99BC2B85E95400630A2B /* PokeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A99BB2B85E95400630A2B /* PokeDetailViewModel.swift */; };
 		198A99BE2B85E99800630A2B /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A99BD2B85E99800630A2B /* Pokemon.swift */; };
+		198A99C42B865E8F00630A2B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A99C32B865E8F00630A2B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		198A99B92B85E94600630A2B /* PokeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDetailView.swift; sourceTree = "<group>"; };
 		198A99BB2B85E95400630A2B /* PokeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDetailViewModel.swift; sourceTree = "<group>"; };
 		198A99BD2B85E99800630A2B /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		198A99C32B865E8F00630A2B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				198A99B62B85CCC000630A2B /* Helper.swift */,
+				198A99C32B865E8F00630A2B /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				194F4E1E2B8524000094C6C1 /* PokeListViewModel.swift in Sources */,
 				198A99BE2B85E99800630A2B /* Pokemon.swift in Sources */,
 				198A99BA2B85E94600630A2B /* PokeDetailView.swift in Sources */,
+				198A99C42B865E8F00630A2B /* Constants.swift in Sources */,
 				194F4DF22B85228A0094C6C1 /* ContentView.swift in Sources */,
 				198A99B22B85B41D00630A2B /* PokeImage.swift in Sources */,
 				194F4E242B852C970094C6C1 /* NetworkService.swift in Sources */,

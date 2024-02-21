@@ -14,8 +14,8 @@
             filePath = "PokeDex/Features/PokeList/PokeListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "viewPokemon()"
             landmarkType = "7">
             <Locations>
@@ -77,8 +77,8 @@
             filePath = "PokeDex/Features/PokeList/PokeListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "viewPokemon()"
             landmarkType = "7">
             <Locations>
@@ -125,8 +125,8 @@
             filePath = "PokeDex/Features/PokeList/PokeListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "viewPokemon()"
             landmarkType = "7">
             <Locations>
@@ -188,9 +188,137 @@
             filePath = "PokeDex/Features/PokeList/PokeListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "viewPokemon()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48BC702D-52F4-4FEC-BCFB-BA5721298B05"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokeDex/Features/PokeDetail/PokeDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getPokeDetails()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FFA3AE3C-8AE8-466A-8B0E-D41C59946E6B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokeDex/Features/PokeDetail/PokeDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getPokeDetails()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FFA3AE3C-8AE8-466A-8B0E-D41C59946E6B - 42664b150e7b62e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;PokeDex.Pokemon, PokeDex.NetworkError&gt;) -&gt; () in PokeDex.PokeDetailViewModel.getPokeDetails() -&gt; ()"
+                  moduleName = "PokeDex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tasneempatel/Documents/GitHub/PokeDex/PokeDex/PokeDex/Features/PokeDetail/PokeDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "FFA3AE3C-8AE8-466A-8B0E-D41C59946E6B - 13be4fb8ddc61330"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (PokeDex.PokemonDescriptions) -&gt; Swift.Bool in closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;PokeDex.Pokemon, PokeDex.NetworkError&gt;) -&gt; () in PokeDex.PokeDetailViewModel.getPokeDetails() -&gt; ()"
+                  moduleName = "PokeDex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tasneempatel/Documents/GitHub/PokeDex/PokeDex/PokeDex/Features/PokeDetail/PokeDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "53">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "636E9FB0-424F-4CC7-9649-06FEC0F1E22C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokeDex/Features/PokeDetail/PokeDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "getPokeDetails()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "636E9FB0-424F-4CC7-9649-06FEC0F1E22C - d59e98d5e4f29802"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;PokeDex.Pokemon, PokeDex.NetworkError&gt;) -&gt; () in PokeDex.PokeDetailViewModel.getPokeDetails() -&gt; ()"
+                  moduleName = "PokeDex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tasneempatel/Documents/GitHub/PokeDex/PokeDex/PokeDex/Features/PokeDetail/PokeDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "881">
+               </Location>
+               <Location
+                  uuid = "636E9FB0-424F-4CC7-9649-06FEC0F1E22C - 42664b150e7b6309"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;PokeDex.Pokemon, PokeDex.NetworkError&gt;) -&gt; () in PokeDex.PokeDetailViewModel.getPokeDetails() -&gt; ()"
+                  moduleName = "PokeDex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tasneempatel/Documents/GitHub/PokeDex/PokeDex/PokeDex/Features/PokeDetail/PokeDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "74">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F85F526-14A2-4055-8019-F0E401297C1C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokeDex/Features/PokeDetail/PokeDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getPokeDetails()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

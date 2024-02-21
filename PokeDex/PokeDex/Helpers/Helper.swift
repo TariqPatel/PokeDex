@@ -11,16 +11,16 @@ import SwiftUI
 struct Helper {
     
     static func getPokeImage(url: String) -> String {
-        let basePokeImageURL = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
+        
         let result = url.components(separatedBy:  "/")
                                 .flatMap { [$0, "/"] }
                                 .dropLast()
                                 .filter { $0 != "" }
-        return basePokeImageURL + result[result.count - 2] + ".png"
+        return Constants.Strings.pokemonSpriteUrl + result[result.count - 2] + ".png"
     }
     
     static func getPokemonID(url: String) -> String {
-        let basePokeImageURL = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
+        
         let result = url.components(separatedBy:  "/")
                                 .flatMap { [$0, "/"] }
                                 .dropLast()
