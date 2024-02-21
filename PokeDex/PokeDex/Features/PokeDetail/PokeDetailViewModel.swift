@@ -10,6 +10,7 @@ import Foundation
 final class PokeDetailViewModel: ObservableObject {
     @Published var pokemon: Pokemon
     @Published var pokemonURL: String
+    @Published var pokemonDescription: String = ""
     
     init(pokemon: Pokemon = Pokemon(), pokemonURL: String = "") {
         self.pokemon = pokemon
@@ -25,7 +26,8 @@ final class PokeDetailViewModel: ObservableObject {
             switch result {
                 case .success(let response):
                     DispatchQueue.main.async {
-                        print(response)
+                        var description =  response.descriptions?.filter( { $0.language.name.contains("en") } )
+                        self.pokemonDescription = description?.first?.description ?? "Could not find description"
                     }
                 case .failure(let error):
                     print(error)

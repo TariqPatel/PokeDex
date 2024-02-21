@@ -13,7 +13,7 @@ struct PokeDetailView: View {
     
     var body: some View {
         NavigationView {
-            Text("Tariq")
+            Text(pokeDetailViewModel.pokemonDescription)
             .navigationTitle("Pokemon name here")
         }.task {
             pokeDetailViewModel.getPokeDetails()

@@ -12,7 +12,7 @@ struct Pokemon: Codable {
     var gene_modulo: Int?
     var possible_values: [Int]?
     var highest_stat: HighestStat?
-    var description: [PokemonDescriptions]?
+    var descriptions: [PokemonDescriptions]?
 }
 
 struct HighestStat: Codable {
