@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct ImageHelper {
+struct Helper {
     
     static func getPokeImage(url: String) -> String {
         let basePokeImageURL = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
@@ -17,5 +17,14 @@ struct ImageHelper {
                                 .dropLast()
                                 .filter { $0 != "" }
         return basePokeImageURL + result[result.count - 2] + ".png"
+    }
+    
+    static func getPokemonID(url: String) -> String {
+        let basePokeImageURL = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
+        let result = url.components(separatedBy:  "/")
+                                .flatMap { [$0, "/"] }
+                                .dropLast()
+                                .filter { $0 != "" }
+        return  result[result.count - 2]
     }
 }

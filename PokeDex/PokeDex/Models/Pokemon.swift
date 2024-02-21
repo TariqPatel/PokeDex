@@ -8,5 +8,24 @@
 import Foundation
 
 struct Pokemon: Codable {
-    var name: String?
+    var id: Int?
+    var gene_modulo: Int?
+    var possible_values: [Int]?
+    var highest_stat: HighestStat?
+    var description: [PokemonDescriptions]?
+}
+
+struct HighestStat: Codable {
+    var name: String
+    var url: String
+}
+
+struct PokemonDescriptions: Codable {
+    var description: String
+    var language: PokemonLanguage
+}
+
+struct PokemonLanguage: Codable {
+    var name: String
+    var url: String
 }

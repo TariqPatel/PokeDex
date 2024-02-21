@@ -16,11 +16,11 @@ struct PokeListView: View {
         NavigationView {
             VStack {
                 List(searchResults, id: \.name) { pokemon in
-                    NavigationLink(destination: PokeDetailView(pokeListViewModel: PokeDetailViewModel(pokemonURL: pokemon.url))) {
+                    NavigationLink(destination: PokeDetailView(pokeDetailViewModel: PokeDetailViewModel(pokemonURL: pokemon.url))) {
                         HStack {
                             Text(pokemon.name.capitalized).bold()
                             Spacer()
-                            PokeImage(pokeImageURL: ImageHelper.getPokeImage(url: pokemon.url))
+                            PokeImage(pokeImageURL: Helper.getPokeImage(url: pokemon.url))
                         }
                     }
                 }

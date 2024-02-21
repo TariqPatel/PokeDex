@@ -12,16 +12,16 @@ final class PokeListViewModel: ObservableObject {
     
     func viewPokemon() {
         let urlString = "https://pokeapi.co/api/v2/pokemon?limit=100"
-    guard let url = URL(string: urlString) else {return}
-            NetworkService<PokeListResponse>.fetchData(for: url) { (result) in
-                switch result {
-                    case .success(let response):
-                        DispatchQueue.main.async {
-                            self.pokemonList = response.results
-                        }
-                    case .failure(let error):
-                        print(error)
-                }
+        guard let url = URL(string: urlString) else {return}
+        NetworkService<PokeListResponse>.fetchData(for: url) { (result) in
+            switch result {
+                case .success(let response):
+                    DispatchQueue.main.async {
+                        self.pokemonList = response.results
+                    }
+                case .failure(let error):
+                    print(error)
             }
+        }
     }
 }

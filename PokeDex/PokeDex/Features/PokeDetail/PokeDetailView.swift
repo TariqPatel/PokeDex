@@ -9,10 +9,16 @@ import SwiftUI
 
 struct PokeDetailView: View {
     
-    @StateObject var pokeListViewModel = PokeDetailViewModel()
+    @StateObject var pokeDetailViewModel = PokeDetailViewModel()
     
     var body: some View {
-        Text("Tariq")
+        NavigationView {
+            Text("Tariq")
+            .navigationTitle("Pokemon name here")
+        }.task {
+            pokeDetailViewModel.getPokeDetails()
+        }
+        
     }
 }
 
