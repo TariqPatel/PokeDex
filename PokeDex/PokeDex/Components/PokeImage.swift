@@ -24,10 +24,10 @@ struct PokeImage: View {
                             }
                         case .success(let image):
                             image.resizable()
-                        case .failure(let error):
-                            Text(error.localizedDescription)
+                        case .failure(_):
+                            Text("Image not available.")
                         @unknown default:
-                            EmptyView()
+                            Text("Image not available.")
                     }
                 }
                 .frame(width: size, height: size)

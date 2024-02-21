@@ -11,7 +11,7 @@ import SwiftUI
 struct ImageHelper {
     
     static func getPokeImage(url: String) -> String {
-        var basePokeImageURL = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
+        let basePokeImageURL = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
         let result = url.components(separatedBy:  "/")
                                 .flatMap { [$0, "/"] }
                                 .dropLast()
