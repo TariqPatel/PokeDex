@@ -13,7 +13,7 @@ struct PokeListView: View {
     @State private var searchText = ""
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack {
                 List(searchResults, id: \.name) { pokemon in
                     HStack {
@@ -23,6 +23,7 @@ struct PokeListView: View {
                     }
                 }
             }
+            .navigationTitle("Whos that Pokemon!")
         }.searchable(text: $searchText).task {
             pokeListViewModel.viewPokemon()
         }
