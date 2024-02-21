@@ -19,20 +19,13 @@ struct PokeListView: View {
                     HStack {
                         Text(pokemon.name.capitalized)
                         Spacer()
-                        PokeImage(pokeImageURL: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png")
+                        PokeImage(pokeImageURL: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png")
                     }
                 }
-                Button(action: {
-                    pokeListViewModel.viewPokemon()
-                }) {
-                    Text("Whos that POKEMON")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.yellow)
-                        .foregroundColor(.white)
-                }
             }
-        }.searchable(text: $searchText)
+        }.searchable(text: $searchText).task {
+            pokeListViewModel.viewPokemon()
+        }
     }
     
     var searchResults: [PokeList] {
