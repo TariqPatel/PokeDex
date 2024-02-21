@@ -19,6 +19,7 @@
 		194F4E212B852B720094C6C1 /* PokeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F4E202B852B720094C6C1 /* PokeListModel.swift */; };
 		194F4E242B852C970094C6C1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F4E232B852C970094C6C1 /* NetworkService.swift */; };
 		194F4E272B852CD40094C6C1 /* NetworkErrorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F4E262B852CD40094C6C1 /* NetworkErrorEnum.swift */; };
+		198A99B22B85B41D00630A2B /* PokeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A99B12B85B41D00630A2B /* PokeImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		194F4E202B852B720094C6C1 /* PokeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeListModel.swift; sourceTree = "<group>"; };
 		194F4E232B852C970094C6C1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		194F4E262B852CD40094C6C1 /* NetworkErrorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorEnum.swift; sourceTree = "<group>"; };
+		198A99B12B85B41D00630A2B /* PokeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		194F4DEE2B85228A0094C6C1 /* PokeDex */ = {
 			isa = PBXGroup;
 			children = (
+				198A99B02B85B40C00630A2B /* Components */,
 				194F4E252B852CBE0094C6C1 /* Enums */,
 				194F4E222B852C870094C6C1 /* Services */,
 				194F4E1F2B852B440094C6C1 /* Models */,
@@ -180,6 +183,14 @@
 				194F4E262B852CD40094C6C1 /* NetworkErrorEnum.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		198A99B02B85B40C00630A2B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				198A99B12B85B41D00630A2B /* PokeImage.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +327,7 @@
 				194F4E212B852B720094C6C1 /* PokeListModel.swift in Sources */,
 				194F4E1E2B8524000094C6C1 /* PokeListViewModel.swift in Sources */,
 				194F4DF22B85228A0094C6C1 /* ContentView.swift in Sources */,
+				198A99B22B85B41D00630A2B /* PokeImage.swift in Sources */,
 				194F4E242B852C970094C6C1 /* NetworkService.swift in Sources */,
 				194F4E272B852CD40094C6C1 /* NetworkErrorEnum.swift in Sources */,
 				194F4DF02B85228A0094C6C1 /* PokeDexApp.swift in Sources */,
