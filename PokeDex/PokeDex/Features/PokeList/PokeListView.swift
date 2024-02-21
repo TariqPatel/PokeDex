@@ -17,9 +17,9 @@ struct PokeListView: View {
             VStack {
                 List(searchResults, id: \.name) { pokemon in
                     HStack {
-                        Text(pokemon.name.capitalized)
+                        Text(pokemon.name.capitalized).bold()
                         Spacer()
-                        PokeImage(pokeImageURL: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png")
+                        PokeImage(pokeImageURL: ImageHelper.getPokeImage(url: pokemon.url))
                     }
                 }
             }
