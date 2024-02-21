@@ -16,11 +16,11 @@ struct PokeListView: View {
         NavigationView {
             VStack {
                 List(searchResults, id: \.name) { pokemon in
-                    NavigationLink(destination: PokeDetailView(pokeDetailViewModel: PokeDetailViewModel(pokemonURL: pokemon.url))) {
+                    NavigationLink(destination: PokeDetailView(pokeDetailViewModel: PokeDetailViewModel(pokeList: pokemon))) {
                         HStack {
-                            Text(pokemon.name.capitalized).bold()
+                            Text(pokemon.name?.capitalized ?? "").bold()
                             Spacer()
-                            PokeImage(pokeImageURL: Helper.getPokeImage(url: pokemon.url))
+                            PokeImage(pokeImageURL: Helper.getPokeImage(url: pokemon.url ?? ""))
                         }
                     }
                 }
@@ -35,7 +35,7 @@ struct PokeListView: View {
         if searchText.isEmpty {
             return pokeListViewModel.pokemonList
         } else {
-            return pokeListViewModel.pokemonList.filter( { $0.name.contains(searchText.lowercased()) } )
+            return pokeListViewModel.pokemonList.filter( { $0.name!.contains(searchText.lowercased()) } )
         }
     }
 }

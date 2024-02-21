@@ -15,6 +15,6 @@ struct PokeListResponse: Codable {
 }
 
 struct PokeList: Codable {
-    var name: String
-    var url: String
+    var name: String?
+    var url: String?
 }

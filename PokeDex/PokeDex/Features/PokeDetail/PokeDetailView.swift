@@ -13,12 +13,31 @@ struct PokeDetailView: View {
     
     var body: some View {
         NavigationView {
-            Text(pokeDetailViewModel.pokemonDescription)
-            .navigationTitle("Pokemon name here")
+            VStack {
+                Text(pokeDetailViewModel.pokeList.name?.capitalized ?? "")
+                    .font(.title)
+                    .fontWeight(.bold)
+                PokeImage(pokeImageURL: Helper.getPokeImage(url: pokeDetailViewModel.pokeList.url ?? ""))
+                VStack(alignment: .leading, spacing: 16) {
+                    HStack{
+                        Text("Highest Stat:").bold()
+                        Spacer()
+                        Text(pokeDetailViewModel.pokeHighestStat.capitalized)
+                    }
+                    HStack{
+                        Text("Personality:").bold()
+                        Spacer()
+                        Text(pokeDetailViewModel.pokemonDescription)
+                    }
+                    .font(.body)
+                    Spacer()
+                }
+                .padding(50)
+                Spacer()
+            }
         }.task {
             pokeDetailViewModel.getPokeDetails()
         }
-        
     }
 }
 
